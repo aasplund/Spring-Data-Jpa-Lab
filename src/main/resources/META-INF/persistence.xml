@@ -1,0 +1,13 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+  <persistence-unit name="default">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>se.asplund.user.User</class>
+    <properties>
+      <property name="hibernate.hbm2ddl.auto" value="create" />
+        <property name="hibernate.show_sql" value="true" />
+        <property name="hibernate.format_sql" value="true" />
+    </properties>
+  </persistence-unit>
+
+</persistence>
